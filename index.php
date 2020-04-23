@@ -11,32 +11,13 @@
 
         <div class="container">
             <?php include 'data.php'; ?>
-            <canvas id="line-chart" data-database="<?php echo $database; ?>"></canvas>
+            <h1>Milestone 1</h1>
+            <canvas id="line-chart"></canvas>
+            <h1>Milestone 2</h1>
+            <canvas id="line-chart-2"></canvas>
+            <canvas id="pie-chart-2"></canvas>
         </div>
 
-
-        <script>
-        /*
-        $(document).ready(function () {
-            var mesi = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'];
-            < ?php include 'data.php'; ?>
-            var data = < ?php echo $database ?> ;
-            var ctx = $('#line-chart');
-            var chart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: mesi,
-                    datasets: [{
-                        label: 'My First dataset',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: data
-                    }]
-                }
-            });
-        });
-        */
-        </script>
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>

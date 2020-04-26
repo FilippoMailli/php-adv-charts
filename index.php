@@ -16,6 +16,10 @@
             <h1>Milestone 2</h1>
             <canvas id="line-chart-2"></canvas>
             <canvas id="pie-chart-2"></canvas>
+            <h1>Milestone 3</h1>
+            <canvas id="line-chart-3"></canvas>
+            <canvas id="pie-chart-3"></canvas>
+            <canvas id="line-3"></canvas>
         </div>
 
         <script src="js/main.js" charset="utf-8"></script>

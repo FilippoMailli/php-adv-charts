@@ -71,7 +71,7 @@ $(document).ready(function () {
                     labels.push(valori);
                     datiTorta.push(dataAgents[valori]);
                 }
-                creaGrafico(datiTorta, labels, position, type);
+                creaGraficoPie(datiTorta, labels, position, type);
             }
         })
     }
@@ -126,32 +126,37 @@ $(document).ready(function () {
                     label: 'Vendite',
                     data: dataValues,
                     backgroundColor: [
+                        'rgb(132, 112, 255)'
+                    ],
+                    borderColor: [
+                        'rgb(072, 061, 139)'
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+    }
+
+    function creaGraficoPie(dataValues, labelsData, posCtx, typeChart){
+        var ctx = $(posCtx);
+        var chart = new Chart(ctx, {
+            type: typeChart,
+            data: {
+                labels: labelsData,
+                datasets: [{
+                    label: 'Vendite',
+                    data: dataValues,
+                    backgroundColor: [
                         'rgb(132, 112, 255)',
                         'rgb(000,000,128)',
                         'rgb(030,114,255)',
-                        'rgb(072,209,204)',
-                        'rgb(132, 112, 255)',
-                        'rgb(000,000,128)',
-                        'rgb(030,114,255)',
-                        'rgb(072,209,204)',
-                        'rgb(132, 112, 255)',
-                        'rgb(000,000,128)',
-                        'rgb(030,114,255)',
-                        'rgb(072,209,204)',
+                        'rgb(072,209,204)'
                     ],
                     borderColor: [
                         'rgb(072, 061, 139)',
                         'rgb(000,000,205)',
                         'rgb(070,130,180)',
-                        'rgb(095,158,160)',
-                        'rgb(072, 061, 139)',
-                        'rgb(000,000,205)',
-                        'rgb(070,130,180)',
-                        'rgb(095,158,160)',
-                        'rgb(072, 061, 139)',
-                        'rgb(000,000,205)',
-                        'rgb(070,130,180)',
-                        'rgb(095,158,160)',
+                        'rgb(095,158,160)'
                     ],
                     borderWidth: 1
                 }]
